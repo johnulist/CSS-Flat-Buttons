@@ -1,4 +1,4 @@
 CSS-Flat-Buttons
 ================
 
-_Beautiful CSS buttons_
+Beautiful CSS buttons created by [KBRmedia](http://gempixel.com).
