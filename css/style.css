@@ -2,3 +2,126 @@
    Main Layout Style
    Not part of the button package
  **/
+@import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700);
+   *{
+		margin: 0;
+		padding: 0;
+	}
+	body{
+		background:#fff; 
+		margin: 0; 
+		padding: 0;
+		width:100%;
+		font-family:'Source Sans Pro','Helvetica Neue', Helvetica, Arial, sans-serif;
+	}
+	h2{
+		margin: 10px 0;
+	}
+	h2 span{
+		float:right;
+		font-size: 12px;
+		background: #122C36;
+		color: #fff;
+		border: 1px solid #000;
+		border-radius: 2px;
+		padding: 5px 10px;
+	}
+	::selection {
+		background: #06a9ef; 
+		color:#fff;
+	 }
+	::-moz-selection {
+		background: #06a9ef; 
+		color:#fff;	
+	}
+	::-webkit-scrollbar {
+		width: 10px;
+		border: none;
+	}
+
+	::-webkit-scrollbar-track {
+		background: transparent;
+		border: none;
+	}
+
+	::-webkit-scrollbar-thumb {
+		background: #06a9ef; 
+		border: 1px solid #0083C1;
+	}
+	a{
+		color:#06a9ef;
+		text-decoration: none;
+		transition:all 0.5s linear;
+		-webkit-transition:all 0.5s linear;
+		-o-transition:all 0.5s linear;
+		-moz-transition:all 0.5s linear;
+	}
+	a:hover{
+		color:#000;
+	}
+	.header{
+		background: #fff;
+		height:90px;
+	}	
+	.header .logo{
+		float:left;
+		background: url(http://gempixel.com/asset/logo.png) no-repeat;
+		width:250px;
+		height: 50px;
+		margin-top: 20px;
+		padding-left: 60px;
+		font-size: 30px;
+		font-weight: 700;
+	}
+		.header .logo span{
+			font-size: 12px;
+		}				
+	.wrapper{
+		padding: 0;
+		clear: both;
+		width: 960px;
+	    margin: 0 auto;	
+	    display: block;
+	}	
+	.container { 
+		clear:both;
+		display: block;
+		width: 100%;
+	}	
+	.container.dark{
+		padding: 30px 0;
+		background: #122C36;
+		color: #fff;
+		border-bottom: 1px solid #000;
+		border-top: 1px solid #000;
+		overflow: hidden;		
+	}	
+.footer{
+	margin: 20px 0;
+	font-size: 13px;
+	height: 30px;
+}	
+	.footer .copy{
+		float: left;
+	}	
+
+.main-button{
+	float:left;
+	background: #06a9ef;
+	color: #fff;
+	font-size: 20px;
+	border-radius: 3px;
+	border: 0;
+	cursor: pointer;
+		-webkit-border-radius: 3px;
+		-moz-border-radius: 3px;
+		-o-border-radius: 3px;	
+	padding: 5px 20px;
+	margin-top:30px;
+	margin-right:30px;
+	position: relative;
+		transition:all 0.5s linear;
+	-webkit-transition:all 0.5s linear;
+	-o-transition:all 0.5s linear;
+	-moz-transition:all 0.5s linear;	
+}	
