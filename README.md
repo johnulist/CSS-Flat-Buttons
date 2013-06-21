@@ -1,4 +1,12 @@
 CSS Flat Buttons
 ================
 
-Beautiful CSS buttons created by [KBRmedia](http://gempixel.com).
+Beautiful and highly customizable CSS buttons created by [KBRmedia](http://gempixel.com). 
+
+##Customization
+
+You can easily customize the .less file included in the package.
+
+##License
+
+Feel free to use for both personal and commerical use. You can linkback to my site http://gempixel.com if you want to but you are not required.
