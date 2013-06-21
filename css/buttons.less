@@ -1,7 +1,10 @@
 
- @namespace: button;
+ /**
+ *  Variables
+ */
+ @namespace: button; // Button class name e.g. class="button"
 
- @font_size: 14px;
+ @font_size: 14px; 
 
  @font_family: Helvitica, Arial;
 
@@ -25,7 +28,7 @@
  *  Main Style
  */
  .@{namespace}{
-    color: darken(@default_color,50%); 	
+	color: darken(@default_color,50%); 	
 	background: @default_color; 	
 	border-top: 0;
 	border-left: 0;
@@ -199,3 +202,12 @@ input[type=submit].@{namespace},button.@{namespace}{
 	-ms-transition:@property @time @animation;
 	-moz-transition:@property @time @animation;
 }
+.opacity(@opacity) {
+	-moz-opacity: @opacity;
+	-khtml-opacity: @opacity;
+	-webkit-opacity: @opacity;
+	opacity: @opacity;
+	@o: @opacity * 100;
+	-ms-filter: ~"progid:DXImageTransform.Microsoft.Alpha(opacity=@{o})";
+	filter: ~"alpha(opacity=@{o})";
+}  
