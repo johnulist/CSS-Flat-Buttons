@@ -24,7 +24,7 @@
   -moz-transition: all 0.5s linear;
 }
 .button:hover {
-  color: #6f6f6f;
+  color: #ffffff;
   background: #fbfbfb;
   border-bottom-color: #e1e1e1;
 }
@@ -56,7 +56,7 @@
   border-bottom-color: #932212;
 }
 .button.red:hover {
-  color: #000000;
+  color: #fbe0dc;
   background: #d8321a;
   border-bottom-color: #aa2814;
 }
@@ -71,7 +71,7 @@
   border-bottom-color: #006a84;
 }
 .button.blue:hover {
-  color: #000000;
+  color: #b7f1ff;
   background: #00a7d1;
   border-bottom-color: #007f9e;
 }
@@ -86,7 +86,7 @@
   border-bottom-color: #ab6403;
 }
 .button.orange:hover {
-  color: #000000;
+  color: #fef2e2;
   background: #f69004;
   border-bottom-color: #c47204;
 }
@@ -101,7 +101,7 @@
   border-bottom-color: #7200f0;
 }
 .button.purple:hover {
-  color: #110024;
+  color: #ffffff;
   background: #993eff;
   border-bottom-color: #7f0aff;
 }
