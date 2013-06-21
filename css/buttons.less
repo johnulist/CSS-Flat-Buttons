@@ -1,7 +1,201 @@
-/**
-    Variables
- **/
+
+ @namespace: button;
+
+ @font_size: 14px;
+
+ @font_family: Helvitica, Arial;
+
+ @border_radius: 5px;
+
+ @default_color: #eee;
+
+ @green_color: #7BA813;
+
+ @red_color: #C12D17;
  
+ @blue_color: #0093B7;
+
+ @orange_color: #DD8104;
+
+ @purple_color: #8C24FF;
+
+ @black_color: #444444;
+
 /**
-    Buttons
- **/
+ *  Main Style
+ */
+ .@{namespace}{
+    color: darken(@default_color,50%); 	
+	background: @default_color; 	
+	border-top: 0;
+	border-left: 0;
+	border-right: 0;
+	border-bottom:	3px solid darken(@default_color,10%); 
+	padding: 5px 20px;
+	font-weight: 700;
+	font-size: @font_size;	
+	font-family: @font_family, sans-serif;
+	text-decoration: none;
+    display:inline-block;
+    margin-bottom: 5px;
+	position: relative;	
+	top: 0;
+	.transition();
+ }
+	.@{namespace}:hover{
+		color: darken(@default_color,50%); 	
+		background: lighten(@default_color,5%); 	
+		border-bottom-color: darken(@default_color,5%); 
+	}
+ 	.@{namespace}:active,.@{namespace}:focus{
+ 		top: 2px;
+		color: darken(@default_color,30%); 	
+		background: darken(@default_color,10%); 	
+		border-bottom: 0;
+	}
+.@{namespace}.green{
+	color: lighten(@green_color,50%); 	
+	background:  @green_color; 	
+	border-bottom-color: darken(@green_color,10%); 
+ }
+	.@{namespace}.green:hover{
+		color: lighten(@green_color,60%); 	
+		background: lighten(@green_color,5%); 	
+		border-bottom-color: darken(@green_color,5%); 
+	}
+ 	.@{namespace}.green:active,.@{namespace}.green:focus{
+		color: darken(@green_color,30%); 	
+		background: darken(@green_color,10%); 	
+	}
+.@{namespace}.red{
+	color: lighten(@red_color,50%); 	
+	background:  @red_color; 	
+	border-bottom-color: darken(@red_color,10%); 
+ }
+	.@{namespace}.red:hover{
+		color: darken(@red_color,50%); 	
+		background: lighten(@red_color,5%); 	
+		border-bottom-color: darken(@red_color,5%); 
+	}
+ 	.@{namespace}.red:active,.@{namespace}.red:focus{
+		color: darken(@red_color,30%); 	
+		background: darken(@red_color,10%); 	
+	}
+.@{namespace}.blue{
+	color: lighten(@blue_color,50%); 	
+	background:  @blue_color; 	
+	border-bottom-color: darken(@blue_color,10%); 
+ }
+	.@{namespace}.blue:hover{
+		color: darken(@blue_color,50%); 	
+		background: lighten(@blue_color,5%); 	
+		border-bottom-color: darken(@blue_color,5%); 
+	}
+ 	.@{namespace}.blue:active,.@{namespace}.blue:focus{
+		color: darken(@blue_color,30%); 	
+		background: darken(@blue_color,10%); 	
+	}
+.@{namespace}.orange{
+	color: lighten(@orange_color,50%); 	
+	background:  @orange_color; 	
+	border-bottom-color: darken(@orange_color,10%); 
+ }
+	.@{namespace}.orange:hover{
+		color: darken(@orange_color,50%); 	
+		background: lighten(@orange_color,5%); 	
+		border-bottom-color: darken(@orange_color,5%); 
+	}
+ 	.@{namespace}.orange:active,.@{namespace}.orange:focus{
+		color: darken(@orange_color,30%); 	
+		background: darken(@orange_color,10%); 	
+	}	
+.@{namespace}.purple{
+	color: lighten(@purple_color,50%); 	
+	background:  @purple_color; 	
+	border-bottom-color: darken(@purple_color,10%); 
+ }
+	.@{namespace}.purple:hover{
+		color: darken(@purple_color,50%); 	
+		background: lighten(@purple_color,5%); 	
+		border-bottom-color: darken(@purple_color,5%); 
+	}
+ 	.@{namespace}.purple:active,.@{namespace}.purple:focus{
+		color: darken(@purple_color,30%); 	
+		background: darken(@purple_color,10%); 	
+	}	
+.@{namespace}.black{
+	color: lighten(@black_color,50%); 	
+	background:  @black_color; 	
+	border-bottom-color: darken(@black_color,10%); 
+ }
+	.@{namespace}.black:hover{
+		color: lighten(@black_color,100%); 	
+		background: lighten(@black_color,5%); 	
+		border-bottom-color: darken(@black_color,5%); 
+	}
+ 	.@{namespace}.black:active,.@{namespace}.black:focus{
+		color: lighten(@black_color,30%); 	
+		background: darken(@black_color,10%); 	
+	}
+/**
+ *  Rounded Style
+ */
+
+ .@{namespace}.rounded{
+ 	.border-radius(@border_radius);
+ }
+
+/**
+ * Tooltip - add class .tool-tip
+ */
+.@{namespace}.tooltip:hover:before{
+	content: attr(data-tooltip);
+	position: absolute;
+	top:-120%;
+	left: 0;	
+	padding: 5px 5%;	
+	width: 90% !important;	
+	color: #fff;
+	background: #000;
+	background: rgba(0, 0, 0, .7);
+	text-align: center;
+	font-size: @font_size;	
+	.border-radius(2px);
+}	
+.@{namespace}.tooltip:hover:after{
+	border: solid transparent;
+	content: " ";
+	height: 0;
+	width: 0;
+	top: -25%;
+	position: absolute;
+	pointer-events: none;		
+	border-color: rgba(0, 0, 0, 0);
+	border-top-color: #000;
+	border-top-color: rgba(0, 0, 0, 0.7);
+	border-width: 5px;
+	left: 50%;
+	margin-left: -5px;
+}
+
+/**
+ * Input & Button elements
+ */
+input[type=submit].@{namespace},button.@{namespace}{
+	cursor: pointer;
+	outline: none;
+	-webkit-appearance: none;
+}
+// Quick Functions
+.border-radius(@radius: 2px) {
+  	border-radius: @radius;
+  	-moz-border-radius: @radius;
+  	-webkit-border-radius: @radius;
+}
+.transition(@time:0.5s,@animation:linear,@property:all){
+	transition:@property @time @animation;
+	-webkit-transition:@property @time @animation;
+	-o-transition:@property @time @animation;
+	-ms-transition:@property @time @animation;
+	-moz-transition:@property @time @animation;
+}
