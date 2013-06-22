@@ -24,7 +24,7 @@
   -moz-transition: all 0.5s linear;
 }
 .button:hover {
-  color: #ffffff;
+  color: #888;
   background: #fbfbfb;
   border-bottom-color: #e1e1e1;
 }
