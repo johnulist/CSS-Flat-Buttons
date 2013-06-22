@@ -8,7 +8,7 @@ Beautiful and highly customizable CSS buttons created by [KBRmedia](http://gempi
 The usage is very simple. All you need to do is to add the appropriate class and that is it. The list of class is as follows:
 
 ###Colors
-**.green**,**.blue**,**.red**,**.orange**,**.purple**,**.black**
+**.green**, **.blue**, **.red**, **.orange**, **.purple**, **.black**
 
 ####Sample Markup assuming namespace is button
 
@@ -26,9 +26,13 @@ The usage is very simple. All you need to do is to add the appropriate class and
 
 ###Rounded corner
 
+Just add **.rounded** to make the button rounded. The radius can be customized in the less file.
+
 ```<a href="" class="button red rounded">I am a red button</a>```
 
 ###Tooltip
+
+Just add **.tooltip** and **data-tooltip="YOUR TOOLTIP CONTENT"** to enable the tooltip.
 
 ```<a href="" class="button red tooltip" data-tooltip="I am a tooltip">I am a red button</a>```
 
